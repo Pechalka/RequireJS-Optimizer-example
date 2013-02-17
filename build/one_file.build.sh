@@ -1,0 +1,1 @@
+node r.js -o one_file.config.js
