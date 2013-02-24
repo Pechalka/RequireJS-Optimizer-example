@@ -1,1 +1,0 @@
-node r.js -o optimize_folder.config.js
