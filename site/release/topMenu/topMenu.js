@@ -1,0 +1,1 @@
+define(["knockout","text!./topMenu.html"],function(e,t){return function(n){var r=this;r.items=e.observableArray(n),r.selected=e.observable(n[0]),r.html=t}})

@@ -3,13 +3,33 @@
 <head>
     <meta charset="utf-8">
     <title>Mini abe</title>
+    <style type="text/css">
+    .active{
+    	background-color: red;
+    }
+    </style>
+
+    <link rel="stylesheet" href="vendor/colorbox/example1/colorbox.css">
 </head>
  <body>
+
+<!-- ko with : topMenu -->			
+<!-- ko template:{ html: html } -->
+<!-- /ko -->
+<!-- /ko -->
+
+
 <!-- ko with : content -->			
-			<!-- ko template:{ html: html } -->
-			<!-- /ko -->
-			<!-- /ko -->
+<!-- ko template:{ html: html } -->
+<!-- /ko -->
+<!-- /ko -->
  </body>
+
+
+	<!-- ko with : popup -->			
+	<!-- ko template:{ html: html } -->
+	<!-- /ko -->
+	<!-- /ko -->
 
 
 <script  data-main="release/main" src="release/main.js" type="text/javascript"></script>

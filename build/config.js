@@ -11,23 +11,23 @@
 
 	paths : {
 		requireLib : 'vendor/require/require',
-		overview : "moduls/overview/modul",
-		vendor : 'vendor/vendor'
+		overview : "moduls/overview/modul"
+	//	vendor : 'vendor/vendor'
 	},
 
 	modules:[
-		// {
-		// 	name : 'vendor',
-		// 	include : ['knockout', 'jquery', 'requireLib', 'text', 'sammy']
-		// //	create: true
-		// },
 		{
 			name : 'main',
-			include : ['vendor']			
+			include : ['knockout', 'jquery', 'requireLib', 'text', 'sammy', 'stringTemplateEngine', 'colorbox']
+	//		create: true
 		},
 		{
 			name : 'overview',
-			exclude : ['vendor']
+			exclude : ['main']
+		},
+		{
+			name : 'students',
+			exclude : ['main']
 		}
 	]
 })

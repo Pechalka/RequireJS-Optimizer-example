@@ -1,0 +1,1 @@
+define(["knockout","text!./index.html"],function(e,t){return function(e){var n=this;n.show_add=function(){e.trigger("show_add")},n.update=function(){alert("update")},n.html=t}})

@@ -1,7 +1,7 @@
 define(["moduls/overview/index", "app"], function(VM, app) {
 	return {
-		showIndex : function(name){
-			app.content(new VM(name));
+		showIndex : function(){
+			app.content(new VM('vasa'));
 		}
 	}
 });	
