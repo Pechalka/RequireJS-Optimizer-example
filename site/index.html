@@ -13,11 +13,30 @@
 </head>
  <body>
 
+<!-- ko with : userMenu -->          
+<!-- ko template:{ html: html } -->
+<!-- /ko -->
+<!-- /ko -->
+
 <!-- ko with : topMenu -->			
 <!-- ko template:{ html: html } -->
 <!-- /ko -->
 <!-- /ko -->
 
+<!-- ko with : breadcrumbs -->          
+<!-- ko template:{ html: html } -->
+<!-- /ko -->
+<!-- /ko -->
+
+
+
+<!-- ko with : studentSearch -->          
+<!-- ko template:{ html: html } -->
+<!-- /ko -->
+<!-- /ko -->
+
+
+<br/>
 
 <!-- ko with : content -->			
 <!-- ko template:{ html: html } -->
@@ -31,12 +50,14 @@
 	<!-- /ko -->
 	<!-- /ko -->
 
+<!-- 
 
 <script  data-main="release/main" src="release/main.js" type="text/javascript"></script>
 
+ -->
+ 
 
-<!-- 
 	<script data-main="/main" src="vendor/require/require.js" type="text/javascript"></script>
  
- -->
+
  </html>

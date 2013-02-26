@@ -8,12 +8,14 @@ require.config({
         "sammy" : "vendor/sammy-latest.min",
         "colorbox" : "vendor/colorbox/jquery.colorbox-min",
 
-
+        "vent" : "libs/eventaggregator",
         "stringTemplateEngine": "libs/stringTemplateEngine",
 
         "overview" : "moduls/overview/modul",
-        "students" : "moduls/students/modul"
+        "students" : "moduls/students/modul",
+        "catalog" : "moduls/catalog/modul",
 
+        "app" : "moduls/application/app"
     },
     shim: {
         "ko.mapping" : ["knockout"],
@@ -26,12 +28,12 @@ require.config({
 require([
 	"knockout",
     "jquery",
-
     "app",
+    "router",
     "stringTemplateEngine"
-    ], function(ko, $, app){        
+    ], function(ko, $, app, router){        
 		$(function() {
 			ko.applyBindings(app);
-            app.run();
+            router.run();
 		});	
 });

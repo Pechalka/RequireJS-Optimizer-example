@@ -2,10 +2,9 @@ define([
 	"moduls/students/index", 
 	"moduls/students/add", 
 	"app",
+	"vent",
 	"colorbox"], 
-	function(IndexVM, AddVM, app) {
-	var vent = $({});
-
+	function(IndexVM, AddVM, app, vent) {
 	var openPopup = function(user){
 		app.popup(new AddVM(user, vent));
 		$.colorbox({

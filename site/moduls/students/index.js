@@ -1,5 +1,5 @@
-define(["knockout", "text!./index.html"], function(ko, template) {
-	return function(vent){
+define(["knockout", "text!./index.html", "vent"], function(ko, template, vent) {
+	return function(){
 		var self = this;
 
 		self.show_add = function(){

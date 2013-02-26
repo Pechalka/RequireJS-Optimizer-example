@@ -1,0 +1,14 @@
+<!-- ko foreach : topItems -->
+<a href="#" data-bind="text : $data, attr : { href : '#/' + $data}, css : { 'active' : $data === $parent.topSelected() }"></a>
+<!-- /ko -->
+
+<div style="width : 600px">
+
+<!-- ko foreach: items -->
+
+<div style="float : left; margin : 0px; width: 200px"><a href="#" data-bind="text : $data, attr : { href : '#/' + $data}"></a></div>
+
+<!-- /ko -->
+
+<div style="clear : both"></div>
+</div>

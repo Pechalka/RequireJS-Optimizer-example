@@ -18,7 +18,7 @@
 	modules:[
 		{
 			name : 'main',
-			include : ['knockout', 'jquery', 'requireLib', 'text', 'sammy', 'stringTemplateEngine', 'colorbox']
+			include : ['knockout', 'jquery', 'requireLib', 'text', 'sammy', 'stringTemplateEngine', 'vent', 'colorbox']
 	//		create: true
 		},
 		{
@@ -27,6 +27,10 @@
 		},
 		{
 			name : 'students',
+			exclude : ['main']
+		},
+		{
+			name : 'catalog',
 			exclude : ['main']
 		}
 	]

@@ -26,12 +26,22 @@ vendor/knockout/knockout-min.js
 vendor/jquery-latest.js
 vendor/sammy-latest.min.js
 vendor/require/text.js
-text!topMenu/topMenu.html
-topMenu/topMenu.js
-app.js
+text!moduls/application/topMenu.html
+libs/eventaggregator.js
+moduls/application/topMenu.js
+text!moduls/application/userMenu.html
+moduls/application/userMenu.js
+text!moduls/application/changeProfile.html
+moduls/application/changeProfile.js
+text!moduls/application/breadcrumbs.html
+moduls/application/breadcrumbs.js
+text!moduls/application/studentSearch.html
+moduls/application/studentSearch.js
+vendor/colorbox/jquery.colorbox-min.js
+moduls/application/app.js
+router.js
 libs/stringTemplateEngine.js
 main.js
-vendor/colorbox/jquery.colorbox-min.js
 
 moduls/overview/modul.js
 ----------------
@@ -46,3 +56,9 @@ moduls/students/index.js
 text!moduls/students/add.html
 moduls/students/add.js
 moduls/students/modul.js
+
+moduls/catalog/modul.js
+----------------
+text!moduls/catalog/general.html
+moduls/catalog/general.js
+moduls/catalog/modul.js
